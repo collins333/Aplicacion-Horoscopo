@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HoroscopoAplicacion</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+<!--    BottomBar-->
+    <string name="horoscopo">Horóscopo</string>
+    <string name="suerte">Suerte</string>
+    <string name="quiromancia">Quiromancia</string>
+
+
+</resources>

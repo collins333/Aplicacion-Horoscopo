@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/horoscopoFragment">
+
+    <fragment
+        android:id="@+id/horoscopoFragment"
+        android:name="com.collins.cursoandroid.horoscopoaplicacion.ui.horoscopo.HoroscopoFragment"
+        android:label="fragment_horoscopo"
+        tools:layout="@layout/fragment_horoscopo" />
+    <fragment
+        android:id="@+id/suerteFragment"
+        android:name="com.collins.cursoandroid.horoscopoaplicacion.ui.suerte.SuerteFragment"
+        android:label="fragment_suerte"
+        tools:layout="@layout/fragment_suerte" />
+    <fragment
+        android:id="@+id/quiromanciaFragment"
+        android:name="com.collins.cursoandroid.horoscopoaplicacion.ui.quiromancia.QuiromanciaFragment"
+        android:label="fragment_quiromancia"
+        tools:layout="@layout/fragment_quiromancia" />
+</navigation>
