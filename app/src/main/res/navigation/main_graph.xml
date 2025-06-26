@@ -9,7 +9,11 @@
         android:id="@+id/horoscopoFragment"
         android:name="com.collins.cursoandroid.horoscopoaplicacion.ui.horoscopo.HoroscopoFragment"
         android:label="fragment_horoscopo"
-        tools:layout="@layout/fragment_horoscopo" />
+        tools:layout="@layout/fragment_horoscopo" >
+        <action
+            android:id="@+id/action_horoscopoFragment_to_horoscopoDetalleActivity"
+            app:destination="@id/horoscopoDetalleActivity" />
+    </fragment>
     <fragment
         android:id="@+id/suerteFragment"
         android:name="com.collins.cursoandroid.horoscopoaplicacion.ui.suerte.SuerteFragment"
@@ -20,4 +24,13 @@
         android:name="com.collins.cursoandroid.horoscopoaplicacion.ui.quiromancia.QuiromanciaFragment"
         android:label="fragment_quiromancia"
         tools:layout="@layout/fragment_quiromancia" />
+    <activity
+        android:id="@+id/horoscopoDetalleActivity"
+        android:name="com.collins.cursoandroid.horoscopoaplicacion.ui.detalle.HoroscopoDetalleActivity"
+        android:label="activity_horoscopo_detalle"
+        tools:layout="@layout/activity_horoscopo_detalle">
+        <argument
+            android:name="type"
+            app:argType="com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoModel"/>
+    </activity>
 </navigation>

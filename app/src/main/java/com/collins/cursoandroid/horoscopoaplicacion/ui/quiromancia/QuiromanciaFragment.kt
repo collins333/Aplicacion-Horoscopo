@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import com.collins.cursoandroid.horoscopoaplicacion.R
 import com.collins.cursoandroid.horoscopoaplicacion.databinding.FragmentQuiromanciaBinding
 import com.collins.cursoandroid.horoscopoaplicacion.databinding.FragmentSuerteBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class QuiromanciaFragment : Fragment() {
 
     private var _binding: FragmentQuiromanciaBinding? = null
