@@ -1,9 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("com.google.devtools.ksp")
-    id("com.google.dagger.hilt.android")
-    id("androidx.navigation.safeargs.kotlin")
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.safeargs)
 }
 
 android {
@@ -21,12 +21,20 @@ android {
     }
 
     buildTypes {
-        release {
+        getByName("release") {
             isMinifyEnabled = false
+            isDebuggable = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            resValue("string","collinsName", "HoroscopoApp")
+            buildConfigField("String", "BASE_URL", "\"https://newastro-prod.vercel.app/\"")
+        }
+        getByName("debug") {
+            isDebuggable = true
+            resValue("string", "collinsName", "[DEBUG] HoroscopoApp")
+            buildConfigField("String", "BASE_URL", "\"https://newastro.vercel.app/\"")
         }
     }
     compileOptions {
@@ -39,13 +47,11 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 }
 
 dependencies {
-    val nav_version = "2.9.0"
-    val hilt_version = "2.56.2"
-    val retro_version = "3.0.0"
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -57,14 +63,17 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     //Navigation component
-    implementation("androidx.navigation:navigation-fragment:$nav_version")
-    implementation("androidx.navigation:navigation-ui:$nav_version")
+    implementation(libs.androidx.navigation.fragment)
+    implementation(libs.androidx.navigation.ui)
 
     //Dagger hilt
-    implementation("com.google.dagger:hilt-android:$hilt_version")
-    ksp("com.google.dagger:hilt-compiler:$hilt_version")
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
 
     //Retrofit
-    implementation ("com.squareup.retrofit2:retrofit:$retro_version")
-    implementation ("com.squareup.retrofit2:converter-gson:$retro_version")
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+    implementation (libs.logging.interceptor)
+
+    implementation(libs.androidx.activity.ktx)
 }
