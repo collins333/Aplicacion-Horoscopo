@@ -1,7 +1,6 @@
 package com.collins.cursoandroid.horoscopoaplicacion.ui.home
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment

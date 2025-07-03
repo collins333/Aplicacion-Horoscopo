@@ -1,13 +1,8 @@
 package com.collins.cursoandroid.horoscopoaplicacion.ui.detalle
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import androidx.activity.OnBackPressedCallback
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope

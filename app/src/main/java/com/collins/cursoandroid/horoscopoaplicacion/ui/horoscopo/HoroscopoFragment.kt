@@ -1,11 +1,9 @@
 package com.collins.cursoandroid.horoscopoaplicacion.ui.horoscopo
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
@@ -13,10 +11,19 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoInfo
-import com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoInfo.*
 import com.collins.cursoandroid.horoscopoaplicacion.databinding.FragmentHoroscopoBinding
+import com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoInfo.Aquarius
+import com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoInfo.Aries
+import com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoInfo.Cancer
+import com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoInfo.Capricorn
+import com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoInfo.Gemini
+import com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoInfo.Leo
+import com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoInfo.Libra
+import com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoInfo.Pisces
+import com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoInfo.Sagittarius
+import com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoInfo.Scorpio
+import com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoInfo.Taurus
+import com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoInfo.Virgo
 import com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoModel
 import com.collins.cursoandroid.horoscopoaplicacion.ui.horoscopo.adaptador.HoroscopoAdapter
 import dagger.hilt.android.AndroidEntryPoint

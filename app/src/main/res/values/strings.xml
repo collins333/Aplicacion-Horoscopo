@@ -21,4 +21,7 @@
     <string name="capricorn">Capricornio</string>
     <string name="aquarius">Acuario</string>
     <string name="pisces">Piscis</string>
+
+    <!--    Suerte-->
+    <string name="share">Compartir</string>
 </resources>

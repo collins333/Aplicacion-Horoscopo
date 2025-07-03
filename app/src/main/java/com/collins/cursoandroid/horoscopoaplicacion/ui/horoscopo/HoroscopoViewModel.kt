@@ -3,7 +3,6 @@ package com.collins.cursoandroid.horoscopoaplicacion.ui.horoscopo
 import androidx.lifecycle.ViewModel
 import com.collins.cursoandroid.horoscopoaplicacion.data.proveedor.HoroscopoProvider
 import com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoInfo
-import com.collins.cursoandroid.horoscopoaplicacion.domain.model.HoroscopoInfo.*
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

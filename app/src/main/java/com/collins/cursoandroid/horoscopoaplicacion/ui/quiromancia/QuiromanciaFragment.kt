@@ -1,13 +1,11 @@
 package com.collins.cursoandroid.horoscopoaplicacion.ui.quiromancia
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.collins.cursoandroid.horoscopoaplicacion.R
+import androidx.fragment.app.Fragment
 import com.collins.cursoandroid.horoscopoaplicacion.databinding.FragmentQuiromanciaBinding
-import com.collins.cursoandroid.horoscopoaplicacion.databinding.FragmentSuerteBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
