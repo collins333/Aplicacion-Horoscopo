@@ -56,12 +56,23 @@
             android:id="@+id/ivAnverso"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="@color/red"
             app:layout_constraintHeight_percent="0.6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             />
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            tools:text="probando"
+            style="@style/Titulo"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivAnverso"
+            app:layout_constraintBottom_toTopOf="@+id/tvSuerte"/>
 
         <TextView
             android:id="@+id/tvSuerte"
@@ -73,7 +84,7 @@
             tools:text="jkdid idfidfid idaifdi iadf idfi a jkdid idfidfid idaifdi iadf idfi a"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ivAnverso"
+            app:layout_constraintTop_toBottomOf="@+id/tvNombre"
             app:layout_constraintBottom_toTopOf="@+id/tvCompartir"/>
 
         <TextView
