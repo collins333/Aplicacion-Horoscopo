@@ -1,5 +1,6 @@
 [versions]
 agp = "8.10.1"
+cameraVersion = "1.4.2"
 hiltAndroid = "2.56.2"
 kotlin = "2.0.21"
 coreKtx = "1.16.0"
@@ -19,6 +20,11 @@ safeargs = "2.9.0"
 
 [libraries]
 androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
+androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraVersion" }
+androidx-camera-core = { module = "androidx.camera:camera-core", version.ref = "cameraVersion" }
+androidx-camera-extensions = { module = "androidx.camera:camera-extensions", version.ref = "cameraVersion" }
+androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraVersion" }
+androidx-camera-view = { module = "androidx.camera:camera-view", version.ref = "cameraVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-navigation-fragment = { module = "androidx.navigation:navigation-fragment", version.ref = "navigationFragment" }
 androidx-navigation-ui = { module = "androidx.navigation:navigation-ui", version.ref = "navigationFragment" }
