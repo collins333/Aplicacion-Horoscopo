@@ -10,6 +10,6 @@
     <color name="secondary">#ee9361</color>
     <color name="accent">#ffffff</color>
     <color name="gold">#ffe78f</color>
-    <color name="black_alpha">#98000000</color>
+    <color name="black_alpha">#66000000</color>
 
 </resources>
