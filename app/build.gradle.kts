@@ -52,17 +52,20 @@ android {
 }
 
 dependencies {
-    val cameraVersion = "1.4.2"
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.activity.ktx)
+
+    //Tests unitarios
     testImplementation(libs.junit)
+    testImplementation(libs.kotlintest.runner.junit5)
+
+
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation(libs.androidx.activity.ktx)
 
     //Navigation component
     implementation(libs.androidx.navigation.fragment)
