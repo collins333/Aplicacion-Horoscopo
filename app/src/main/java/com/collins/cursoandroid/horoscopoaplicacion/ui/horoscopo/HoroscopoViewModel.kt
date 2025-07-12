@@ -9,7 +9,8 @@ import kotlinx.coroutines.flow.StateFlow
 import javax.inject.Inject
 
 @HiltViewModel
-class HoroscopoViewModel @Inject constructor(private val horoscopoProvider: HoroscopoProvider): ViewModel() {
+class HoroscopoViewModel @Inject constructor(private val horoscopoProvider: HoroscopoProvider) :
+    ViewModel() {
 
     private var _horoscopo = MutableStateFlow<List<HoroscopoInfo>>(emptyList())
     val horoscopo: StateFlow<List<HoroscopoInfo>> = _horoscopo
